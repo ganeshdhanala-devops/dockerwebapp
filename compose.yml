@@ -1,8 +1,7 @@
 version: "3.9"
-
 services:
   devopsdb:
-    image: shaikmustafa/automation:db
+    image: ganeshdhanala/automation:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +10,7 @@ services:
       - mynetwork
 
   application:
-    image: shaikmustafa/automation:app
+    image: ganeshdhanala/automation:mapp
     ports:
       - "1111:8080"
     deploy:
