@@ -10,7 +10,7 @@ services:
       - mynetwork
 
   application:
-    image: ganeshdhanala/automation:myappiamge
+    image: ganeshdhanala/automation:myappimage
     ports:
       - "6666:8080"
     deploy:
