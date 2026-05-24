@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   devopsdb:
-    image: ganeshdhanala/automation:db
+    image: ganeshdhanala/automation:dbimage
     ports:
       - "3306:3306"
     deploy:
@@ -10,9 +10,9 @@ services:
       - mynetwork
 
   application:
-    image: ganeshdhanala/automation:myapp
+    image: ganeshdhanala/automation:myappiamge
     ports:
-      - "5555:8080"
+      - "6666:8080"
     deploy:
       replicas: 3
     depends_on:
