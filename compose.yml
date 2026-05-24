@@ -10,9 +10,9 @@ services:
       - mynetwork
 
   application:
-    image: ganeshdhanala/automation:mapp
+    image: ganeshdhanala/automation:myapp
     ports:
-      - "1111:8080"
+      - "3333:8080"
     deploy:
       replicas: 3
     depends_on:
