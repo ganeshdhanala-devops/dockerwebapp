@@ -3,7 +3,7 @@ services:
   devopsdb:
     image: ganeshdhanala/automation:db
     ports:
-      - "1234:3306"
+      - "3306:3306"
     deploy:
       replicas: 3
     networks:
